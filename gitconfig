@@ -1,0 +1,22 @@
+[user]
+  name = Damian Caruso
+  email = damian.caruso@gmail.com
+[color]
+  ui = true
+[alias]
+  st = status -sb
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  count = shortlog -sn
+  unstage = reset HEAD
+[push]
+  default = tracking
+[diff]
+  # For Github-style word diffs
+  wordRegex = [^[:space:]]
+[format]
+  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+[rebase]
+  autosquash = true
