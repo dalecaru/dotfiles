@@ -20,3 +20,5 @@
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [rebase]
   autosquash = true
+[core]
+  editor = vim
