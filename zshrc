@@ -45,7 +45,7 @@ ZSH_TMUX_AUTOSTART=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bundler git jsontools rvm sublime tmux)
+plugins=(git jsontools rvm sublime tmux)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.bash_aliases
@@ -54,5 +54,7 @@ source $HOME/.bash_aliases
 setopt autocd
 
 # Customize to your needs...
+ANDROID_HOME=$HOME/Dev/android-sdk-linux
+PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools # Add Android tools to PATH
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 JRUBY_OPTS="-Xcompile.invokedynamic=false -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.mode=OFF" # jruby dev
