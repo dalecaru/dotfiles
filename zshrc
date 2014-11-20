@@ -40,12 +40,12 @@ alias glogf="git log --graph --color"
 COMPLETION_WAITING_DOTS="true"
 
 # Autostart Tmux
-ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART=false
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git jsontools rvm sublime tmux)
+plugins=(docker git jsontools rvm sublime tmux)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.bash_aliases
