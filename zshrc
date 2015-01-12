@@ -48,7 +48,6 @@ ZSH_TMUX_AUTOSTART=false
 plugins=(bower bundler colored-man docker git jsontools node npm nvm rvm ssh-agent sublime tmux urltools vagrant)
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.bash_aliases
 
 # Autocd
 setopt autocd
