@@ -45,7 +45,7 @@ ZSH_TMUX_AUTOSTART=false
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(docker git jsontools rvm sublime tmux)
+plugins=(bower bundler colored-man docker git jsontools node npm nvm rvm ssh-agent sublime tmux urltools vagrant)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.bash_aliases
