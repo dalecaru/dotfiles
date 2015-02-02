@@ -57,3 +57,6 @@ ANDROID_HOME=$HOME/Dev/android-sdk-linux
 PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools # Add Android tools to PATH
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 JRUBY_OPTS="-Xcompile.invokedynamic=false -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.mode=OFF" # jruby dev
+
+# Alias
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
