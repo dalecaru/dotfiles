@@ -44,3 +44,6 @@ unsetopt correct_all
 
 # Auto name dirs
 unsetopt auto_name_dirs
+
+# Launch Byobu
+_byobu_sourced=1 . /usr/bin/byobu-launch 2>/dev/null || true
