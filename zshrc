@@ -11,6 +11,7 @@ antigen bundles <<EOBUNDLES
   docker
   git
   git-extras
+  golang
   jsontools
   node
   npm
@@ -22,6 +23,7 @@ antigen bundles <<EOBUNDLES
   tmux
   urltools
   vagrant
+  joshuarubin/zsh-gvm
   sharat87/autoenv
   zsh-users/zsh-completions
   zsh-users/zsh-history-substring-search
