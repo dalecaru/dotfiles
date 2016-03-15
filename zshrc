@@ -1,7 +1,7 @@
 source "$HOME/.antigen/antigen.zsh"
 
 antigen use oh-my-zsh
-antigen theme gallois
+antigen theme $HOME .duellj
 
 antigen bundles <<EOBUNDLES
   bower
