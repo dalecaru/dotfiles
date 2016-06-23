@@ -6,7 +6,7 @@ antigen theme $HOME .duellj
 antigen bundles <<EOBUNDLES
   bower
   bundler
-  colored-man
+  colored-man-pages
   command-not-found
   docker
   git
@@ -48,4 +48,4 @@ unsetopt correct_all
 unsetopt auto_name_dirs
 
 # Launch Byobu
-_byobu_sourced=1 . /usr/bin/byobu-launch 2>/dev/null || true
+_byobu_sourced=1 . byobu-launch 2>/dev/null || true
