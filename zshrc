@@ -1,7 +1,7 @@
 source "$HOME/.antigen/antigen.zsh"
 
 antigen use oh-my-zsh
-antigen theme $HOME .duellj
+antigen theme pure
 
 antigen bundles <<EOBUNDLES
   bower
@@ -20,10 +20,8 @@ antigen bundles <<EOBUNDLES
   safe-paste
   ssh-agent
   sublime
-  tmux
   urltools
   vagrant
-  joshuarubin/zsh-gvm
   sharat87/autoenv
   zsh-users/zsh-completions
   zsh-users/zsh-history-substring-search

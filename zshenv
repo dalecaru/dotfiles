@@ -1,9 +1,9 @@
 export EDITOR=vim
-export ANDROID_HOME="$HOME/Dev/android-sdk-linux"
-export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
-export PATH="$PATH:/usr/local/heroku/bin"
+export GOPATH="$HOME/Dev/golang"
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$GOROOT/bin"
+export PATH="$PATH:/opt/local/bin" ##MacPorts
 export PATH="$PATH:$HOME/Dev/go_appengine"
-export PATH="$PATH:$HOME/.git-radar"
 export JRUBY_OPTS="-Xcompile.invokedynamic=false -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.mode=OFF"
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8

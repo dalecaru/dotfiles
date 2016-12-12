@@ -16,6 +16,7 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'kien/ctrlp.vim'
 Plugin 'ervandew/supertab'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'wookiehangover/jshint.vim'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
@@ -48,6 +49,7 @@ syntax enable
 
 " UI
 set t_Co=256
+set guifont=Menlo\ Regular:h14
 set title
 set autoindent
 set smartindent
@@ -85,3 +87,15 @@ set statusline=%F%m%r%h%w[%L]%y[%p%%][%04v][%{fugitive#statusline()}]
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+" vim-go
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+let g:go_get_update = 0
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+let g:go_list_type = "quickfix"
