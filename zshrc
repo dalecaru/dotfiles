@@ -35,6 +35,8 @@ antigen apply
 autoload -U zmv
 alias zmz='noglob zmv'
 alias zcp='noglob zmv -C'
+# uuid
+alias uuid="uuidgen | tr -d - | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
 
 # Autocd
 setopt autocd
