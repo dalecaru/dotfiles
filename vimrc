@@ -11,12 +11,14 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'benmills/vimux'
 Plugin 'bling/vim-airline'
+Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'fatih/vim-go'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'kien/ctrlp.vim'
 Plugin 'ervandew/supertab'
+Plugin 'mxw/vim-jsx'
 Plugin 'nanotech/jellybeans.vim'
-Plugin 'wookiehangover/jshint.vim'
+Plugin 'pangloss/vim-javascript'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
@@ -99,3 +101,10 @@ let g:go_get_update = 0
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:go_list_type = "quickfix"
+
+" golint
+set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
+autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
+
+" dart
+let dart_style_guide = 2
