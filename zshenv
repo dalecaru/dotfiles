@@ -2,7 +2,6 @@ export EDITOR=nvim
 export GPG_TTY=$(tty)
 export GOPATH="$HOME/go"
 export GOROOT="/usr/local/go"
-export PATH="/opt/local/bin:$PATH" ##MacPorts
 export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 export PATH="$PATH:$HOME/flutter/bin"
 export JRUBY_OPTS="-Xcompile.invokedynamic=false -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.mode=OFF"
