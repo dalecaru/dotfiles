@@ -1,7 +1,6 @@
 [user]
   name = Damian Caruso
   email = damian.caruso@gmail.com
-	signingkey = FF92364EC0DFE1D4
 [color]
   ui = true
 [alias]
@@ -25,8 +24,4 @@
 [rebase]
   autosquash = true
 [core]
-  editor = nvim
-[gpg]
-	program = /usr/local/bin/gpg
-[commit]
-	gpgsign = true
+  editor = vim
