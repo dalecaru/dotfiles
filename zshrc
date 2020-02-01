@@ -46,3 +46,6 @@ unsetopt correct_all
 
 # Auto name dirs
 unsetopt auto_name_dirs
+
+# Hook direnv
+eval "$(direnv hook zsh)"
