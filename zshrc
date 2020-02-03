@@ -1,10 +1,9 @@
 source "$HOME/.antigen/antigen.zsh"
 
 antigen use oh-my-zsh
-antigen theme pure
+antigen theme robbyrussell
 
 antigen bundles <<EOBUNDLES
-  bower
   bundler
   colored-man-pages
   command-not-found
@@ -19,10 +18,7 @@ antigen bundles <<EOBUNDLES
   rbenv
   safe-paste
   ssh-agent
-  sublime
   urltools
-  vagrant
-  sharat87/autoenv
   zsh-users/zsh-completions
   zsh-users/zsh-history-substring-search
   zsh-users/zsh-syntax-highlighting
@@ -49,3 +45,20 @@ unsetopt auto_name_dirs
 
 # Hook direnv
 eval "$(direnv hook zsh)"
+
+# Override exit()
+exit() {
+  if [[ -z $TMUX ]]; then
+    builtin exit
+    return
+  fi
+
+  panes=$(tmux list-panes | wc -l)
+  wins=$(tmux list-windows | wc -l)
+  count=$(($panes + $wins -1))
+  if [ $count -eq 1 ]; then
+    tmux detach
+  else
+    builtin exit
+  fi
+}
