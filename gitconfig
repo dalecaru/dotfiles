@@ -1,6 +1,6 @@
 [user]
-  name = Damian Caruso
-  email = damian.caruso@gmail.com
+	name = dalecaru
+	email = damian@damiancaruso.com
 [color]
   ui = true
 [alias]
@@ -25,3 +25,10 @@
   autosquash = true
 [core]
   editor = vim
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main

@@ -1,10 +1,21 @@
 export EDITOR=nvim
 export GPG_TTY=$(tty)
 export GOPATH="$HOME/go"
-export GOROOT="/usr/local/go"
-export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
-export PATH="$PATH:$HOME/flutter/bin"
+export PATH="$PATH:$GOPATH/bin"
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:/opt/gradle/gradle-6.2/bin"
+export PATH="$HOME/.tgenv/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$PATH:$HOME/Library/Python/3.9/bin"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export JRUBY_OPTS="-Xcompile.invokedynamic=false -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.mode=OFF"
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
