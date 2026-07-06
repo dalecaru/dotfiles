@@ -1,0 +1,50 @@
+2026-07-06T11:57:11.810047Z  INFO herdr::platform::macos: raised server file descriptor soft limit previous=2560 target=8192
+2026-07-06T11:57:11.811041Z  INFO herdr::api::server: api server listening path=/Users/damian/.config/herdr/herdr.sock
+2026-07-06T11:57:11.811655Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-07-06T11:57:11.825298Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T11:57:11.826163Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-06T11:57:11.828989Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=5053
+2026-07-06T11:57:11.829309Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w1" pane_id=1
+2026-07-06T11:57:11.829334Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-06T11:57:11.829420Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-06T11:57:11.829449Z  INFO herdr::server::headless: created startup workspace cwd=/Users/damian/Dev/dalecaru/dotfiles
+2026-07-06T11:57:11.829617Z  INFO herdr::server::headless: client protocol socket listening path=/Users/damian/.config/herdr/herdr-client.sock
+2026-07-06T11:57:11.829656Z  INFO herdr::server::headless: herdr server started api_socket=/Users/damian/.config/herdr/herdr.sock client_socket=/Users/damian/.config/herdr/herdr-client.sock
+2026-07-06T11:57:11.829689Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=5036
+2026-07-06T11:57:12.085029Z  INFO herdr::server::headless: client connected client_id=2 cols=207 rows=44 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-06T11:57:15.290227Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 0, signal: None }"
+2026-07-06T11:57:15.290314Z  INFO herdr::pane: pane session terminated pane=1 pid=5053 signal=Hangup
+2026-07-06T11:57:15.290603Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=43 cols=181 scrollback_limit_bytes=10000000
+2026-07-06T11:57:15.296125Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=5267
+2026-07-06T11:57:15.296421Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w2" pane_id=2
+2026-07-06T11:57:15.296432Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-06T11:57:15.296441Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-06T11:57:18.044993Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 0, signal: None }"
+2026-07-06T11:57:18.045280Z  INFO herdr::pane: pane session terminated pane=2 pid=5267 signal=Hangup
+2026-07-06T11:57:18.045490Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=43 cols=181 scrollback_limit_bytes=10000000
+2026-07-06T11:57:18.051579Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=5351
+2026-07-06T11:57:18.051968Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3" pane_id=3
+2026-07-06T11:57:18.051984Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-06T11:57:18.052002Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-06T11:57:20.945274Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-06T11:57:23.053897Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/damian/.config/herdr/session.json workspaces=1
+2026-07-06T11:58:06.954746Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 127, signal: None }"
+2026-07-06T11:58:06.955080Z  INFO herdr::pane: pane session terminated pane=3 pid=5351 signal=Hangup
+2026-07-06T11:58:06.955179Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=4 rows=43 cols=181 scrollback_limit_bytes=10000000
+2026-07-06T11:58:06.958989Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=4 pid=5539
+2026-07-06T11:58:06.959215Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w4" pane_id=4
+2026-07-06T11:58:06.959235Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-07-06T11:58:06.959245Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-07-06T11:58:11.964964Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/damian/.config/herdr/session.json workspaces=1
+2026-07-06T11:58:20.542568Z  INFO herdr::server::headless: client detach requested via keybind client_id=2
+2026-07-06T11:58:20.546539Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-07-06T11:59:56.764207Z  INFO herdr::server::headless: client connected client_id=4 cols=207 rows=44 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-06T11:59:58.793157Z  INFO herdr::server::headless: client detach requested via keybind client_id=4
+2026-07-06T11:59:58.794292Z  INFO herdr::server::headless: client disconnected client_id=4
+2026-07-06T12:27:11.804446Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T12:57:11.863287Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T13:27:11.889944Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T13:57:11.909433Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T14:27:11.890179Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T14:57:11.812001Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T15:27:11.796809Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
