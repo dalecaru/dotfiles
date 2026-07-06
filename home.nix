@@ -28,6 +28,9 @@ in
     syntaxHighlighting.enable = true;  # commands turn green when valid
     initContent = ''
       bindkey '^f' autosuggest-accept
+
+      export ASDF_DATA_DIR="$HOME/.asdf"
+      export PATH="$ASDF_DATA_DIR/shims:$PATH"
     '';
     shellAliases = {
       ".." = "cd ..";
