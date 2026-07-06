@@ -35,6 +35,9 @@
     onActivation.cleanup = "zap";  # remove anything not listed here
     onActivation.autoUpdate = true;
     onActivation.extraFlags = [ "--force" ];
+    taps = [
+      "anomalyco/tap"
+    ];
     brews = [
       "asdf"
       "aws-vault"
@@ -45,8 +48,10 @@
       "gh"
       "gogcli"
       "herdr"
+      "letta-code"
       "libgit2"
       "openai-whisper"
+      "opencode"
       "poppler"
       "railway"
       "temporal"
