@@ -48,7 +48,6 @@
       "gh"
       "gogcli"
       "herdr"
-      "letta-code"
       "libgit2"
       "openai-whisper"
       "opencode"
