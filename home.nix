@@ -29,6 +29,7 @@ in
     initContent = ''
       export ASDF_DATA_DIR="$HOME/.asdf"
       export PATH="$ASDF_DATA_DIR/shims:$PATH"
+      export PATH="/opt/podman/bin:$PATH"
 
       bindkey '^f' autosuggest-accept
     '';
