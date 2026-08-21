@@ -1,15 +1,6 @@
 {
   "version": 3,
   "skills": {
-    "gh-axi": {
-      "source": "kunchenguid/gh-axi",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/kunchenguid/gh-axi.git",
-      "skillPath": "skills/gh-axi/SKILL.md",
-      "skillFolderHash": "e292d010921fc2b7978187c58439e6c3cc82dced",
-      "installedAt": "2026-07-01T11:47:24.968Z",
-      "updatedAt": "2026-08-07T02:58:18.083Z"
-    },
     "find-skills": {
       "source": "vercel-labs/skills",
       "sourceType": "github",
