@@ -2,6 +2,10 @@
 
 let
   dotfiles = "${config.home.homeDirectory}/.dotfiles";
+  # Skills I write live in their own repo; edits there apply with no rebuild.
+  skillsRepo = "${config.home.homeDirectory}/Dev/dalecaru/skills";
+  mySkills = [ "unslop" ];  # add a folder name here after creating skills/<name>/SKILL.md
+  link = config.lib.file.mkOutOfStoreSymlink;
 in
 
 {
@@ -106,21 +110,25 @@ in
   };
 
   # Edit-in-place: the real file stays in my repo, ~/.config just points at it.
-  home.file.".config/wezterm".source =
-    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/wezterm";
-  home.file.".config/nvim".source =
-    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/nvim";
-  home.file.".config/herdr".source =
-    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/herdr";
-  home.file.".claude/settings.json".source =
-    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.claude/settings.json";
+  home.file = {
+    ".config/wezterm".source = link "${dotfiles}/home/.config/wezterm";
+    ".config/nvim".source = link "${dotfiles}/home/.config/nvim";
+    ".config/herdr".source = link "${dotfiles}/home/.config/herdr";
+    ".claude/settings.json".source = link "${dotfiles}/home/.claude/settings.json";
 
-  home.file.".agents/AGENTS.md".source =
-    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/AGENTS.md";
-  home.file.".claude/CLAUDE.md".source =
-    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/AGENTS.md";
-  home.file.".codex/AGENTS.md".source =
-    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/AGENTS.md";
-  home.file.".pi/agent/AGENTS.md".source =
-    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/AGENTS.md";
+    ".agents/AGENTS.md".source = link "${dotfiles}/home/AGENTS.md";
+    ".claude/CLAUDE.md".source = link "${dotfiles}/home/AGENTS.md";
+    ".codex/AGENTS.md".source = link "${dotfiles}/home/AGENTS.md";
+    ".pi/agent/AGENTS.md".source = link "${dotfiles}/home/AGENTS.md";
+
+    # Third-party skills stay installed by `npx skills add <owner>/<repo>`.
+    # Only the lockfile is tracked - `npx skills install` replays it on a new box.
+    ".agents/.skill-lock.json".source = link "${dotfiles}/home/.agents/.skill-lock.json";
+  }
+  # My own skills: symlinked straight out of the skills repo, for Claude and for
+  # every other agent that reads ~/.agents/skills.
+  // builtins.listToAttrs (builtins.concatMap (s: [
+    { name = ".claude/skills/${s}"; value.source = link "${skillsRepo}/skills/${s}"; }
+    { name = ".agents/skills/${s}"; value.source = link "${skillsRepo}/skills/${s}"; }
+  ]) mySkills);
 }

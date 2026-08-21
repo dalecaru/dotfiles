@@ -1,0 +1,70 @@
+{
+  "version": 3,
+  "skills": {
+    "gh-axi": {
+      "source": "kunchenguid/gh-axi",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/kunchenguid/gh-axi.git",
+      "skillPath": "skills/gh-axi/SKILL.md",
+      "skillFolderHash": "e292d010921fc2b7978187c58439e6c3cc82dced",
+      "installedAt": "2026-07-01T11:47:24.968Z",
+      "updatedAt": "2026-08-07T02:58:18.083Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "eb6a23305aea6e340d14b9de3766e721f9f4861b",
+      "installedAt": "2026-07-01T11:47:32.894Z",
+      "updatedAt": "2026-07-01T11:47:32.894Z"
+    },
+    "chrome-devtools-axi": {
+      "source": "kunchenguid/chrome-devtools-axi",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/kunchenguid/chrome-devtools-axi.git",
+      "skillPath": "skills/chrome-devtools-axi/SKILL.md",
+      "skillFolderHash": "e0382e8bd6ed7051d3c6d36e75d9ab75519f34a8",
+      "installedAt": "2026-07-01T11:51:34.391Z",
+      "updatedAt": "2026-07-01T11:51:34.391Z"
+    },
+    "lavish": {
+      "source": "kunchenguid/lavish-axi",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/kunchenguid/lavish-axi.git",
+      "skillPath": "skills/lavish/SKILL.md",
+      "skillFolderHash": "3bf6e75c453106097a8b0516b834b421c884c7c6",
+      "installedAt": "2026-07-01T12:01:24.321Z",
+      "updatedAt": "2026-07-01T12:01:24.321Z"
+    },
+    "herdr": {
+      "source": "herdrdev/herdr",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/herdrdev/herdr.git",
+      "skillPath": "skills/herdr/SKILL.md",
+      "skillFolderHash": "4821f1d39ccae24b9b274b03184edaaf198a3994",
+      "installedAt": "2026-08-12T12:32:28.743Z",
+      "updatedAt": "2026-08-12T12:32:28.743Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "antigravity",
+    "antigravity-cli",
+    "cline",
+    "codex",
+    "cursor",
+    "deepagents",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-code-cli",
+    "opencode",
+    "warp",
+    "zed",
+    "pi",
+    "claude-code"
+  ]
+}
