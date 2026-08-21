@@ -1,1 +1,16 @@
-{}
+{
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "skillOverrides": {
+    "use-railway": "off",
+    "whatsapp": "off"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh"
+  },
+  "enabledPlugins": {},
+  "effortLevel": "medium",
+  "autoMemoryEnabled": false
+}

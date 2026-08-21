@@ -37,25 +37,27 @@
     onActivation.extraFlags = [ "--force" ];
     taps = [
       "anomalyco/tap"
+      "oven-sh/bun"
     ];
     brews = [
       "asdf"
       "aws-vault"
       "awscli"
       "betterleaks"
-      "direnv"
+      "bun"
       "ffmpeg"
       "gh"
       "ghostscript"
       "gogcli"
       "herdr"
       "libgit2"
+      "mise"
       "openai-whisper"
       "opencode"
       "pipx"
       "poppler"
-      "prek"
       "railway"
+      "ripgrep"
       "temporal"
       "wget"
     ];
@@ -63,7 +65,6 @@
       "claude-code"
       "codex"
       "steipete/tap/codexbar"
-      "libreoffice"
       "ngrok"
       "my-monkeys/tap/opensuperwhisper"
       "wezterm"

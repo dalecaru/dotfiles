@@ -27,11 +27,10 @@ in
     autosuggestion.enable = true;      # ghost text from history
     syntaxHighlighting.enable = true;  # commands turn green when valid
     initContent = ''
-      export ASDF_DATA_DIR="$HOME/.asdf"
-      export PATH="$ASDF_DATA_DIR/shims:$PATH"
       export PATH="/opt/podman/bin:$PATH"
 
       bindkey '^f' autosuggest-accept
+      eval "$(mise activate zsh)"
     '';
     shellAliases = {
       ".." = "cd ..";
