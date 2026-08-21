@@ -10,24 +10,6 @@
       "installedAt": "2026-07-01T11:47:32.894Z",
       "updatedAt": "2026-07-01T11:47:32.894Z"
     },
-    "chrome-devtools-axi": {
-      "source": "kunchenguid/chrome-devtools-axi",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/kunchenguid/chrome-devtools-axi.git",
-      "skillPath": "skills/chrome-devtools-axi/SKILL.md",
-      "skillFolderHash": "e0382e8bd6ed7051d3c6d36e75d9ab75519f34a8",
-      "installedAt": "2026-07-01T11:51:34.391Z",
-      "updatedAt": "2026-07-01T11:51:34.391Z"
-    },
-    "lavish": {
-      "source": "kunchenguid/lavish-axi",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/kunchenguid/lavish-axi.git",
-      "skillPath": "skills/lavish/SKILL.md",
-      "skillFolderHash": "3bf6e75c453106097a8b0516b834b421c884c7c6",
-      "installedAt": "2026-07-01T12:01:24.321Z",
-      "updatedAt": "2026-07-01T12:01:24.321Z"
-    },
     "herdr": {
       "source": "herdrdev/herdr",
       "sourceType": "github",
