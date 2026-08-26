@@ -51,6 +51,7 @@
       "gogcli"
       "herdr"
       "libgit2"
+      "libpq"
       "mise"
       "openai-whisper"
       "opencode"

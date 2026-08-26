@@ -31,7 +31,9 @@ in
     autosuggestion.enable = true;      # ghost text from history
     syntaxHighlighting.enable = true;  # commands turn green when valid
     initContent = ''
+      export NO_MISTAKES_TELEMETRY=0
       export PATH="/opt/podman/bin:$PATH"
+      export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
       bindkey '^f' autosuggest-accept
       eval "$(mise activate zsh)"
