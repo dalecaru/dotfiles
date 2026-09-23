@@ -40,6 +40,7 @@
       "oven-sh/bun"
     ];
     brews = [
+      "agent-browser"
       "asdf"
       "aws-vault"
       "awscli"
@@ -52,6 +53,7 @@
       "herdr"
       "libgit2"
       "libpq"
+      "librsvg"
       "mise"
       "openai-whisper"
       "opencode"

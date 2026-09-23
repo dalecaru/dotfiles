@@ -10,3 +10,6 @@ split_horizontal = "prefix+minus"
 new_tab = "prefix+c"
 workspace_picker = "prefix+w"
 goto             = "prefix+g"
+
+[ui]
+agent_panel_sort = "priority"

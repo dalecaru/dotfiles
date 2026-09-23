@@ -18,6 +18,15 @@
       "skillFolderHash": "4821f1d39ccae24b9b274b03184edaaf198a3994",
       "installedAt": "2026-08-12T12:32:28.743Z",
       "updatedAt": "2026-08-12T12:32:28.743Z"
+    },
+    "agent-browser": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
+      "skillPath": "skills/agent-browser/SKILL.md",
+      "skillFolderHash": "82def67855a0d2aad7794207951820fa5422fdb0",
+      "installedAt": "2026-09-18T20:29:58.190Z",
+      "updatedAt": "2026-09-18T20:29:58.190Z"
     }
   },
   "dismissed": {
@@ -25,14 +34,13 @@
   },
   "lastSelectedAgents": [
     "amp",
-    "antigravity",
-    "antigravity-cli",
     "cline",
     "codex",
     "cursor",
-    "deepagents",
+    "droid",
     "gemini-cli",
     "github-copilot",
+    "kilo",
     "kimi-code-cli",
     "opencode",
     "warp",

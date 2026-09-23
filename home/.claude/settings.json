@@ -1,7 +1,9 @@
 {
   "permissions": {
-    "defaultMode": "auto"
+    "defaultMode": "auto",
+    "blockReadsOutsideWorkingDirectories": false
   },
+  "model": "opus[1m]",
   "skillOverrides": {
     "use-railway": "off",
     "whatsapp": "off"
@@ -10,7 +12,57 @@
     "type": "command",
     "command": "~/.claude/statusline.sh"
   },
-  "enabledPlugins": {},
+  "extraKnownMarketplaces": {
+    "claude-code-hooks": {
+      "source": {
+        "source": "github",
+        "repo": "karanb192/claude-code-hooks"
+      }
+    }
+  },
   "effortLevel": "medium",
-  "autoMemoryEnabled": false
+  "modelSettings": {
+    "claude-opus-5": {
+      "effortLevel": "medium"
+    }
+  },
+  "autoMemoryEnabled": false,
+  "autoMode": {
+    "allow": [
+      "$defaults",
+      "Bash(gofmt:*) in the sofia-platform repo — routine Go formatting on tracked source",
+      "Bash(no-mistakes:*) read-only subcommands against the local mirror at /Users/damian/.no-mistakes/repos/b4874c34e287.git"
+    ],
+    "soft_deny": [
+      "$defaults",
+      "Any write, apply, or destroy against terraform/ in metodia/sofia-platform (terraform apply, terraform destroy, terraform state rm/mv)",
+      "psql statements that write or drop against assistant.access_grants or any table holding token hashes"
+    ],
+    "environment": [
+      "### Org-wide",
+      "**Organization**: metodia (GitHub org `metodia`; repo `metodia/sofia-platform`)",
+      "**Cloud provider(s)**: AWS (repo uses `aws-vault` in shell history and README documents ECS task definitions); Railway also appears in shell history (`railway`, 173x)",
+      "**Repository visibility**: private (authoritative: gh API reports `metodia/sofia-platform` as private)",
+      "**Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
+      "**Secrets management**: Zitadel issues access tokens for the `/mcp` subapp; the server authenticates to Zitadel's introspection endpoint with a `key.json` JWT Profile credential; `.env` and `key.json` are gitignored; `aws-vault` is used locally for AWS credentials; a `make encrypt` target exists",
+      "**Default / protected branches**: default branch `main`; `main` is protected and covered by an active ruleset (gh API)",
+      "**CI/CD deploy targets**: GitHub Actions (`.github/workflows`, `build.yaml`); AWS ECS is the documented runtime target (README `stopTimeout` guidance); Railway appears in local shell history",
+      "**Network posture**: None configured",
+      "**Source control**: `github.com:metodia/sofia-platform.git` (origin) only; a local bare mirror remote `no-mistakes` at `/Users/damian/.no-mistakes/repos/b4874c34e287.git` also exists — as scoped by the Trusted repo and Repository visibility entries above",
+      "**Trusted internal domains**: None configured",
+      "**Trusted cloud buckets**: None configured",
+      "**Key internal services**: Zitadel (OAuth 2 token introspection / service-account PATs), the `/mcp` Streamable HTTP subapp (`MTP_MCP_ENABLED`), and the PostgreSQL database behind `assistant.access_grants` (accessed via `psql`)",
+      "**Internal package registry**: None configured",
+      "**Sensitive data locations & audiences**: any file or store holding personal data, confidential business data, credentials, regulated data, or similarly sensitive material; preserve exact handles when known and share only with audiences cleared at the [named+specifics] bar. In this repo specifically: `.env`, `.envrc`, `key.json`, the `assistant.access_grants` table (token hashes), and `terraform/*.tf` state/backend configuration",
+      "**Data retention / declassification**: None configured",
+      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment (hyphen/underscore/dot-delimited — e.g. matches `prod-db`, not `producer`)",
+      "**Protected deployment namespaces / environments**: None configured — fall back to the Sensitive remote targets heuristic",
+      "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment; plus the Terraform root under `terraform/` in this repo (`backend.tf`, `main.tf`, `provider.tf`, `variables.tf`)",
+      "### User-specific",
+      "**Primary use of Claude Code**: software development on the Go-based Metodia/Sofia platform — build, test, formatting (`gofmt`), Makefile targets, and local database inspection via `psql`",
+      "**Trusted repo**: `metodia/sofia-platform` — the git repository the agent started in (working directory `/Users/damian/Dev/metodia/sofia-platform/.treehouse/sofia-platform-694b49/3/sofia-platform`) and its configured remotes (`origin` at `github.com:metodia/sofia-platform.git`, and the local bare mirror `no-mistakes`). It is private, so confidential material may be committed there; secrets and sensitive data (personal & entrusted) are never cleared into any repo by its visibility (see Definitions).",
+      "**Org-specific CLIs**: `no-mistakes` (8x in project transcripts, 12x in shell history), `treehouse` (31x in shell history), `herdr` (19x), `pi` (57x), `prek` (12x)",
+      "**Routine under this repo's prefix**: Makefile-driven workflows (`make build`, `make check-generated`, `make coverage`, `make hygiene`) and `gofmt` runs are routine in this checkout"
+    ]
+  }
 }
